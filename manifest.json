@@ -1,0 +1,16 @@
+{
+    "name": "Unfixed",
+    "version": "1.0",
+    "description": "Maked Fixed Divs Unfixed",
+    "permissions": [
+        "tabs"
+      ],
+      "content_scripts": [
+        {
+          "matches": ["https://*/*"],
+          "js": ["unfix.js"],
+          "run_at": "document_end"
+        }
+      ],
+      "manifest_version": 2
+}
